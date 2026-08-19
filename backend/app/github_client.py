@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 from github import Github
 from app.config import settings
  
