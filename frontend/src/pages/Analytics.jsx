@@ -51,11 +51,11 @@ export default function Analytics() {
           );
      }
 
-     const categoryData = Object.entries(summary?.by_category || {}).map(
+     const categoryData = Object.entries(summary?.category_breakdown || {}).map(
           ([name, value]) => ({ name, value })
      );
 
-     const sourceData = Object.entries(summary?.by_source || {}).map(
+     const sourceData = Object.entries(summary?.source_split || {}).map(
           ([name, value]) => ({ name, value })
      );
      

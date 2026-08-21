@@ -146,8 +146,8 @@ export default function ReviewHistory() {
                                              </td>
                                              <td className="td-mono">{r.total_findings !== null ? r.total_findings : "—"}</td>
                                              <td className="td-mono" style={{ color: "var(--text-secondary)" }}>
-                                                  {new Date(r.created_at).toLocaleString(undefined, {
-                                                       month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+                                                  {new Date(r.created_at + "Z").toLocaleString("en-IN", {
+                                                       timeZone: 'Asia/Kolkata', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
                                                   })}
                                              </td>
                                         </tr>
